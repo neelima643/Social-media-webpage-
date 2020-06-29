@@ -1,0 +1,113 @@
+[
+    {
+        "image" : "./i1.jpeg",
+        "name" : "Roswell Parian",
+        "date" : "March 21,18:45pm" ,
+        "profilepic" : "./p1.jpeg",
+        "description" : "The life is much more interesant, when you remmenber the last time",
+        "count": "99",
+        "commentno" :"145 comments",
+        "commentimage" : "./p1.jpeg",
+        "time1" : "1 hour",
+        "comment1" : "Wow irealy, i love here. Nice pic",
+        "time2" : "1 hour",
+        "comment2" : "Very nice....so beautiful",
+        "time3" : "2 hour",
+        "comment3" : "Super shot...keep it up",
+        "time4" : "3 hour",
+        "comment4" : "So amazing",
+        "time5" : "4 hour",
+        "comment5" : "Fantastic"
+
+
+    },
+
+    {
+        "image": "./i2.jpeg",
+        "name" : "Olivia Francis",
+        "date" : "March 20,16.40pm",
+        "profilepic" : "./p2.jpeg",
+        "description" : "Farewell Johnathan Kent",
+        "count": 50,
+        "commentno" :"65 comments",
+        "commentimage" : "./images.jpeg",
+        "time1" : "1 hour",
+        "comment1" : "Wow great pic",
+        "time2" : "1 hour",
+        "comment2" : "So nice",
+        "time3" : "2 hour",
+        "comment3" : "Superbbbb",
+        "time4" : "3 hour",
+        "comment4" : "Amazing...I love it",
+        "time5" : "4 hour",
+        "comment5" : "Great pic....You are so talented"
+    },
+
+    {
+             "image": "./i3.jpeg",
+            "name" : "Teena Davis",
+            "date" : "march 19,12:40pm" ,
+            "profilepic" : "./p3.jpeg",
+            "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "count": "120",
+            "commentno" :"30 comments",
+            "commentimage" : "./images.jpeg",
+            "time1" : "1 hour",
+            "comment1" : "Wow I love this nice pic",
+            "time2" : "1 hour",
+            "comment2" : "Very nice...keep it up",
+            "time3" : "2 hour",
+            "comment3" : "Super",
+            "time4" : "3 hour",
+            "comment4" : "Beutiful",
+            "time5" : "4 hour",
+            "comment5" : "Its so good"
+        },
+
+        {
+            "image": "./i4.jpeg",
+            "name" : "Olivia Francis",
+            "date" : "March 20,16.40pm",
+            "profilepic" : "./p4.jpeg",
+            "description" : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+            "count": 50,
+            "commentno" :"65 comments",
+            "commentimage" : "./images.jpeg",
+            "time1" : "1 hour",
+            "comment1" : "Wow beutifulpic",
+            "time2" : "1 hour",
+            "comment2" : "S Onice",
+            "time3" : "2 hour",
+            "comment3" : "Super shit",
+            "time4" : "3 hour",
+            "comment4" : "Amazing",
+            "time5" : "4 hour",
+            "comment5" : "Great shot"
+        },
+
+        {
+            "image": "./i5.jpeg",
+            "name" : "Olivia Francis",
+            "date" : "March 2,15.24pm",
+            "profilepic" : "./p5.jpeg",
+            "description" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
+            "count": 20,
+            "commentno" :"36 comments",
+            "commentimage" : "./i5.jpeg",
+            "time1" : "1 hour",
+            "comment1" : "Wow Nice pic",
+            "time2" : "1 hour",
+            "comment2" : "Very nice shot",
+            "time3" : "2 hour",
+            "comment3" : "Super pic",
+            "time4" : "3 hour",
+            "comment4" : "Amazing shot",
+            "time5" : "4 hour",
+            "comment5" : "Grea, what a beautiful shot"
+        }
+        
+    
+    
+
+      
+]

@@ -1,0 +1,360 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> </script>
+        <script type="text/javascript">
+          var post = document.getElementById('post')
+          $(document).ready(function (e){
+            $.getJSON('social.json', function(result){
+              $.each(result, function(i,item){
+                $("#post").append(`
+  <div class="box image">
+    <div class="box-header">
+      <h3><a href=""><img src="${item.profilepic}" alt="" />${item.name}</a>
+        <span>${item.date} <i class="fa fa-globe"></i></span>
+      </h3>
+      <span><i class="fa fa-angle-down"></i></span>
+      <div class="window"><span></span></div>
+    </div>
+    <div class="box-content">
+      <div class="content">
+        <img src="${item.image}" alt="" />
+      </div>
+      <div class="bottom">
+        <p>${item.description}</p>
+        <span><span class="fa fa-search-plus"></span></span>
+      </div>
+    </div>
+    <div class="box-likes">
+      <div class="row">
+        <span><a href="#"><img src="${item.profilepic}" alt="" /></a></span>
+        <span><a href="#"><img src="${item.profilepic}" alt="" /></a></span>
+        <span><a href="#"><img src="${item.profilepic}" alt="" /></a></span>
+        <span><a href="#">${item.count}</a></span>
+        <span>Like this</span>
+      </div>
+      <div class="row">
+        <span>${item.commentno}</span>
+      </div>
+    </div>
+    <div class="box-buttons">
+      <div class="row">
+        <button><span class="fa fa-thumbs-up"></span>Like</button>
+        <button><span class="ion-chatbox-working"></span>Comment</button>
+        <button><span class="ion-share"></span>Share</button>
+      </div>
+    </div>
+    <div class="box-click"><span><i class="ion-chatbox-working"></i> View 140 more comments</span></div>
+    <div class="box-comments">
+      <div class="comment"><img src="${item.profilepic}" alt="" />
+        <div class="content">
+          <h3><a href="">Emily Rudd</a><span><time> ${item.time1} </time><a href="#">Like</a></span></h3>
+          <p>${item.comment1}</p>
+        </div>
+      </div>
+      <div class="comment"><img src="${item.profilepic}" alt="" />
+        <div class="content">
+          <h3><a href="">barbara Palvin</a><span><time> ${item.time2} </time><a href="#">Like</a></span></h3>
+          <p>${item.comment2}</p>
+        </div>
+      </div>
+      <div class="comment"><img src="${item.profilepic}" alt="" />
+        <div class="content">
+          <h3><a href="">Erica Mohn</a><span><time> ${item.time3} </time><a href="#">Like</a></span></h3>
+          <p>${item.comment3}</p>
+        </div>
+      </div>
+      <div class="comment"><img src="${item.profilepic}" alt="" />
+        <div class="content">
+          <h3><a href="">karlie Kloss</a><span><time> ${item.time4} </time><a href="#">Like</a></span></h3>
+          <p>${item.comment4}</p>
+        </div>
+      </div>
+      <div class="comment"><img src="${item.profilepic}" alt="" />
+        <div class="content">
+          <h3><a href="">Candice Swanepoel</a><span><time> ${item.time5} </time><a href="#">Like</a></span></h3>
+          <p>${item.comment5}</p>
+        </div>
+      </div>
+    </div>
+      <div class="box-new-comment">
+        <img src="${item.profilepic}" alt="" />
+        <div class="content">
+          <div class="row">
+            <textarea placeholder="write a comment..."></textarea>
+          </div>
+          <div class="row">
+            <span class="ion-android-attach"></span>
+            <span class="fa fa-smile-o"></span>
+          </div>
+        </div>
+      </div>
+  </div>`)
+              })
+            })
+          })
+        </script>
+        
+    </head>
+    <body style="background-color: #ffffff;">
+
+
+      <div class="header">
+        <img src="./logo.jpg" >
+        <input type="text" placeholder="Search.." name="search">
+        <div class="header-right">
+          <a class="active" href="#"><i class="fa fa-home"></i></a>
+          <a class="active" href="#"><i class="fas fa-play-circle"></i></a>
+          <a class="active" href="#"><i class="fas fa-users"></i></a>
+          <a class="active" href="#"><i class="fas fa-comment-alt"></i></a>
+          <a class="active" href="#"><i class="fas fa-bell"></i></a>
+        </div>
+        </div>
+    
+      <br>
+
+
+<div class="left-col">
+<article>
+  
+  <div class="card-header">
+    <img class="profile-photo" src="./images.jpeg">
+    <h5 style="text-align: center; font-weight: bold;">John</h5>
+    <h5 style="text-align: center;" >Calicut, India</h5>
+    <h5 style="text-align: center;">2000 followers</h5>
+    <a href="#"><button type="button">View</button></a>
+  </div>
+  <ul class="card-links">
+    <a href="#">
+      <li>
+        <i class="icon icon-user"></i><span class="label">Profile</span>
+      </li>
+    </a>
+    <hr>
+    
+   
+    </a>
+    <hr>
+    <a href="#">
+      <li>
+        <i class="icon icon-time"></i>
+        <span class="label">Friends</span>
+        <span class="label-notification label-active">1200</span>
+      </li>
+    </a>
+    <hr>
+    <a href="#">
+      <li>
+        <i class="icon icon-file-text-alt"></i><span class="label">Groups</span><span class="label-notification">35</span>
+      </li>
+    </a>
+    <hr>
+    <a href="#">
+      <li class="link-favorites">
+        <i class="icon icon-heart"></i>
+        <span class="label">liked pages</span>
+        <span class="label-notification">174</span>
+      </li>
+    </a>
+    <a href="#">
+      <li class="link-favorites">
+        <i class="icon icon-heart"></i>
+        <span class="label">Notifications</span>
+        <span class="label-notification">174</span>
+      </li>
+    </a>
+    <a href="#">
+      <li class="link-favorites">
+        <i class="icon icon-heart"></i>
+        <span class="label">Messages</span>
+        <span class="label-notification">174</span>
+      </li>
+    </a>
+    </div>
+  </ul>
+  
+</article>
+<br>
+
+<ul id='friend-list'>
+  <li class='friend selected'>
+    <div class='name' >
+               Suggestions
+
+    </div>
+  </li>
+  <li class='friend'>
+    <img src= "./images.jpeg">
+    <div class='name'>
+      Leah Slaten
+      <p>12 mutual</p>
+    </div>
+  </li>
+  <li class='friend'>
+    <img src="./images.jpeg">
+    <div class='name'>
+     Mario Martinez
+     <p> 12 mutual</p>
+    </div>
+  </li>
+  <li class='friend'>
+    <img src="./images.jpeg">
+    <div class='name'>
+      Cynthia Lo
+      <p> 12 mutual</p>
+    </div>
+  </li>
+  <li class='friend'>
+    <img src="./images.jpeg">
+    <div class='name'>
+      Sally Lin
+      <p> 12 mutual</p>
+    </div>
+  </li>
+  <li class='friend'>
+    <img src="./images.jpeg">
+    <div class='name'>
+      Danny Tang
+      <p> 12 mutual</p>
+    </div>
+  </li>
+</ul>
+</div>
+<div class="centre-col">
+<div class="container1">
+<div class="inputbox ">
+<form id="msform">
+  <fieldset>
+    <img src="./images.jpeg" style="border-radius: 50%; width: 30px; border-left: 150px; ">
+    <input type="text" name="email" placeholder="Write something" /> 
+ 
+  <div style="display: flex; justify-content:flex-end;">
+    <button class="btn"><i class="fas fa-images"></i></button>
+    <button class="btn"><i class="fas fa-video"></i></button>
+    <button class="btn"><i class="fas fa-music"></i></button>
+  </div>
+    
+   
+    <input type="button" name="next" class="next action-button" value="Post" />
+ 
+  </fieldset>
+</form>
+</div>
+</div>
+
+<div class="container3" id="post">
+  
+</div>
+
+
+</div>
+<div class="right-col">
+
+
+
+
+
+
+  <div id="chatbox">
+    <div id="friendslist">
+        <div id="topmenu">
+          <h2 style="font-size: large;">See who is online</h2>
+          </div>
+          
+          <div id="friends">
+            <div class="friendon">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+                  <p>
+                    <strong>Miro Badev</strong>
+                    <span>mirobadev@gmail.com</span>
+                  </p>
+                  <div class="status available"></div>
+              </div>
+              
+              <div class="friendon">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
+                  <p>
+                    <strong>Martin Joseph</strong>
+                    <span>marjoseph@gmail.com</span>
+                  </p>
+                  <div class="status available"></div>
+              </div>
+              
+              <div class="friendon">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/3_copy.jpg" />
+                  <p>
+                    <strong>Tomas Kennedy</strong>
+                    <span>tomaskennedy@gmail.com</span>
+                  </p>
+                   <div class="status available"></div>
+              </div>
+              
+              <div class="friendon">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/4_copy.jpg" />
+                  <p>
+                    <strong>Enrique	Sutton</strong>
+                    <span>enriquesutton@gmail.com</span>
+                  </p>
+                  <div class="status inactive"></div>
+              </div>
+              
+              <div class="friendon">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/5_copy.jpg" />
+                  <p>
+                  <strong>	Darnell	Strickland</strong>
+                    <span>darnellstrickland@gmail.com</span>
+                  </p>
+                  <div class="status inactive"></div>
+              </div>
+              
+              <div id="search">
+                <input type="text" id="searchfield" value="Search contacts..." />
+              </div>
+              
+          </div>                
+          
+      </div>	
+      
+  
+           
+          
+      
+      </div> 
+      
+      <div class="activity">
+        <a href="#" class="active" style="font-size: large;">Recent Activity</a>
+        <a href="#" style="font-size: small;">1 hour ago
+                    <p>Liked a post by Terina</p>
+        </a>
+        <a href="#" style="font-size: small;">2 hour ago
+          <p>Commented on a post by Sam</p></a>
+        <a href="#" style="font-size: small;">3 hour ago
+          <p>Shared a post by Delna</p></a>
+        <a href="#" style="font-size: small;">4 hour ago</p>
+          <p>Shared a photo of rain</p></a>
+      </div>
+    
+  </div>	
+  
+
+
+            
+  
+            
+       
+      
+
+
+  
+
+
+          
+    </body>
+
+
+
+</html>
